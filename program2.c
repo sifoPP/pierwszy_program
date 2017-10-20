@@ -5,7 +5,9 @@ int dodaj(int a, int b){return a + b;}
 int main(void)
 {
        int a = 2, b = 5;  /*deklaracja zmiennych*/
-       char wybor = '*';
+       char wybor;
+       scanf("%c" , &wybor); /* czytaj z konsoli i zapisz wartosc pod wybor*/
+
        if(wybor == '*'){
 printf("wynik mnozenia: %i\n", mnoz(a, b));
 }else{
