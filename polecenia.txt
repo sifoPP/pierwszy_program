@@ -1,0 +1,180 @@
+wspolpp@wspolpp-VirtualBox:~$ cd Pulpit
+wspolpp@wspolpp-VirtualBox:~/Pulpit$ pwd
+/home/wspolpp/Pulpit
+wspolpp@wspolpp-VirtualBox:~/Pulpit$ mkdir pierwszy_program
+wspolpp@wspolpp-VirtualBox:~/Pulpit$ cd pierwszy_program
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ touch pierwszy_program
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ open
+Nie udało się uzyskać deskryptora pliku wskazującego na konsolę
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ cd ..
+wspolpp@wspolpp-VirtualBox:~/Pulpit$ cd program1
+bash: cd: program1: Nie ma takiego pliku ani katalogu
+wspolpp@wspolpp-VirtualBox:~/Pulpit$ cd pierwszy_program
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ cd program1
+bash: cd: program1: Nie ma takiego pliku ani katalogu
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ gcc program1.c -o program1.o
+program1.c: In function ‘main’:
+program1.c:10:20: error: expected ‘;’ before ‘:’ token
+            return 0:
+                    ^
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ gcc program1.c -o program1.o
+program1.c: In function ‘main’:
+program1.c:10:20: error: expected ‘;’ before ‘:’ token
+            return 0:
+                    ^
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1.c
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ gcc program1.c -o program1.o
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+Pierwszy program
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+Pierwszy program
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1.cwspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+Pierwszy program
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+Pierwszy program
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ gcc program1.c -o program1.o
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.oPierwszy program dziala
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1.cwspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git add .
+fatal: Not a git repository (or any of the parent directories): .git
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1.c
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git init
+Initialized empty Git repository in /home/wspolpp/Pulpit/pierwszy_program/.git/
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git add .
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git commit -m "stworzylem_pierwszy_program"
+[master (root-commit) b6ff89c] stworzylem_pierwszy_program
+ 2 files changed, 12 insertions(+)
+ create mode 100644 program1.c
+ create mode 100755 program1.o
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git remote add origin https://github.com/sifoPP/pierwszy_program.git
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git push -u origin master
+Username for 'https://github.com': sifoPP
+Password for 'https://sifoPP@github.com': 
+Counting objects: 4, done.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 2.71 KiB | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/sifoPP/pierwszy_program.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1.c
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git init
+Reinitialized existing Git repository in /home/wspolpp/Pulpit/pierwszy_program/.git/
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ gcc program1.c -o program1.o
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano program1.c
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+Pierwszy program dziala
+g
+\wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+Pierwszy program dziala
+g
+\wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+Pierwszy program dziala
+g
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git init
+Reinitialized existing Git repository in /home/wspolpp/Pulpit/pierwszy_program/.git/
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git add .
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ touch .gitignore
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ touch .gitignore
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ nano .gitignore
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git add .
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git add .
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git commit -m "stworzylem_pierwszy_program"
+[master 07fdd8f] stworzylem_pierwszy_program
+ 3 files changed, 13 insertions(+), 1 deletion(-)
+ create mode 100644 .gitignore
+ rewrite program1.o (65%)
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ 
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git commit -m "modyfikacja mego programu nr 1"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git commit -m "modyfikacja mego programu nr 1"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git add .
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git push -u origin masterUsername for 'https://github.com': sifoPP
+Password for 'https://sifoPP@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sifoPP/pierwszy_program.git/'
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git add .
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git push -u origin master
+Username for 'https://github.com': sifoPP
+Password for 'https://sifoPP@github.com': 
+To https://github.com/sifoPP/pierwszy_program.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/sifoPP/pierwszy_program.git'
+podpowiedź: Updates were rejected because the remote contains work that you do
+podpowiedź: not have locally. This is usually caused by another repository pushing
+podpowiedź: to the same ref. You may want to first integrate the remote changes
+podpowiedź: (e.g., 'git pull ...') before pushing again.
+podpowiedź: See the 'Note about fast-forwards' in 'git push --help' for details.
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git commit -m "modyfikacja mego programu nr 1"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git commit -m "modyfikacja mego programu nr 1"
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working directory clean
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git push -u origin masterUsername for 'https://github.com': sifoPP
+Password for 'https://sifoPP@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/sifoPP/pierwszy_program.git/'
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git push -u origin master
+Username for 'https://github.com': sifoPP
+Password for 'https://sifoPP@github.com': 
+To https://github.com/sifoPP/pierwszy_program.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/sifoPP/pierwszy_program.git'
+podpowiedź: Updates were rejected because the remote contains work that you do
+podpowiedź: not have locally. This is usually caused by another repository pushing
+podpowiedź: to the same ref. You may want to first integrate the remote changes
+podpowiedź: (e.g., 'git pull ...') before pushing again.
+podpowiedź: See the 'Note about fast-forwards' in 'git push --help' for details.
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git pull
+remote: Counting objects: 2, done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (2/2), done.
+From https://github.com/sifoPP/pierwszy_program
+   b6ff89c..1119c33  master     -> origin/master
+CONFLICT (modyfikuj/delete): program1.o deleted in 1119c3327e422d0c04a8f5829905e3d0eaa7d8e0 and zmodyfikowany in HEAD. Version HEAD of program1.o left in tree.
+Automatic merge failed; fix conflicts and then commit the result.
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git rm program1.o
+program1.o: needs merge
+rm 'program1.o'
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git pull
+You have not concluded your merge (MERGE_HEAD exists).
+Please, commit your changes before you can merge.
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git commit -m "modyfikacja mego programu nr 1"
+[master 0d0e73e] modyfikacja mego programu nr 1
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git pull
+Already up-to-date.
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ git push -u origin master
+Username for 'https://github.com': sifoPP
+Password for 'https://sifoPP@github.com': 
+Counting objects: 11, done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 1.89 KiB | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/sifoPP/pierwszy_program.git
+   1119c33..0d0e73e  master -> master
+Branch master set up to track remote branch master from origin.
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+bash: ./program1.o: Nie ma takiego pliku ani katalogu
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ ./program1.o
+bash: ./program1.o: Nie ma takiego pliku ani katalogu
+wspolpp@wspolpp-VirtualBox:~/Pulpit/pierwszy_program$ --version
+
+
